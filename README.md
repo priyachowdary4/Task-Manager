@@ -4,7 +4,7 @@ A high-performance, responsive Task Management application built with **Vanilla 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 * **Priority-Based Filtering:** Real-time task sorting using a "clubbed" pastel filter system (All, Active, Completed).
 * **Strict Date Validation:** Logic-gate implementation to block past-date scheduling, ensuring data integrity.
@@ -13,19 +13,16 @@ A high-performance, responsive Task Management application built with **Vanilla 
 * **Persistence:** Fully integrated with the `LocalStorage API` to maintain state across browser sessions.
 * **Data Portability:** Supports JSON import for seamless task migration.
 
-## 🛠️ Tech Stack & Concepts
+## Tech Stack & Concepts
 
-| Category | Technology |
-| :--- | :--- |
-| **Language** | JavaScript (ES6+), HTML5 |
-| **Styling** | CSS3 (Flexbox, Custom Properties, Transitions) |
-| **Storage** | LocalStorage API |
-| **Icons** | Font Awesome |
-| **Logic** | Event Delegation, Array Prototypes, DOM Manipulation |
+## Technology 
 
----
+**Language**-- JavaScript (ES6+), HTML5 
+**Styling**--CSS3 (Flexbox, Custom Properties, Transitions) 
+**Storage** --LocalStorage API 
+**Icons**--Font Awesome 
+**Logic**--Event Delegation, Array Prototypes, DOM Manipulation 
 
-## 🧠 Development Insights for HENNGE Internship
 
 For this project, I focused on **Edge Case Management**—a core value in professional front-end development. 
 
