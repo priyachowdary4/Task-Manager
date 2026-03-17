@@ -17,7 +17,7 @@ A high-performance, responsive Task Management application built with **Vanilla 
 
 ## Technology 
 
-**Language**-- JavaScript (ES6+), HTML5 
+**Language**-- TypeScript, JavaScript (ES6+), HTML5 
 **Styling**--CSS3 (Flexbox, Custom Properties, Transitions) 
 **Storage** --LocalStorage API 
 **Icons**--Font Awesome 
