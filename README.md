@@ -1,6 +1,6 @@
 # Task-Manager# 
 
-A high-performance, responsive Task Management application built with **Vanilla JavaScript** and **Modern CSS**. This project demonstrates advanced state management, data validation, and user-centric design principles.
+A high-performance, responsive Task Management application built with **Vanilla JavaScript** and **Modern CSS** and I used **TypeScript** for type-safe development and compiled it to JavaScript for browser compatibility." This project demonstrates advanced state management, data validation, and user-centric design principles.
 
 ---
 
