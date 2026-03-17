@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Task Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-list-check"></i>Task Manager</h1>
+            <div class="import-export">
+                <label for="importTasks" class="btn-secondary"><i class="fa-solid fa-file-import"></i> Import</label>
+                <input type="file" id="importTasks" accept=".json" hidden>
+            </div>
+        </header>
+
+        <section class="input-section card">
+            <div class="input-group">
+                <input type="text" id="title" placeholder="What needs to be done?">
+                <input type="date" id="due">
+                <select id="priority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium" selected>Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+            </div>
+            <textarea id="desc" placeholder="Add a description..."></textarea>
+            <button id="addBtn" class="btn-primary">Add Task</button>
+        </section>
+
+        <section class="controls card">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="Search tasks...">
+            </div>
+            <div class="filters">
+                <button class="filter active" data-status="all">All</button>
+                <button class="filter" data-status="active">Active</button>
+                <button class="filter" data-status="completed">Completed</button>
+                <select id="priorityFilter">
+                    <option value="all">All Priorities</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="bulk-actions">
+            <button id="multiDeleteBtn" class="btn-danger" disabled><i class="fa-solid fa-trash-can"></i> Multi-Delete Selected</button>
+            <button id="clearCompletedBtn" class="btn-secondary">Clear Completed</button>
+            <button id="trashBtn" class="btn-info"><i class="fa-solid fa-trash"></i> View Trash (<span id="trashCount">0</span>)</button>
+        </section>
+
+        <div id="taskList" class="task-list"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <div id="editModal" class="modal hidden">
+        <div class="modal-content card">
+            <h2>Edit Task</h2>
+            <input type="text" id="editTitle">
+            <textarea id="editDesc"></textarea>
+            <div class="input-group">
+                <input type="date" id="editDue">
+                <select id="editPriority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div class="modal-btns">
+                <button id="updateTask" class="btn-primary">Save Changes</button>
+                <button id="closeModal" class="btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
